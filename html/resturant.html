@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-zinc-900 relative">
+    <!-- Sec-1 -->
+    <div
+      id="sec-1"
+      class="w-full h-full bg-zinc-900 relative parallax-container flex flex-col items-center"
+    >
+      <nav class="w-full h-1/6 flex items-center justify-between relative">
+        <ul class="flex items-center h-full px-10 relative">
+          <li><i class="ri-bluesky-line text-white text-3xl"></i></li>
+        </ul>
+        <ul
+          class="flex items-center h-full px-10 gap-6 uppercase text-white relative"
+        >
+          <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
+            <a href="about.html">About</a>
+          </li>
+          <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
+            <a href="resturant.html">Resturant</a>
+          </li>
+          <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
+            <a href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <ul class="flex items-center h-full px-10 relative">
+          <li><i class="ri-menu-4-line text-white text-3xl"></i></li>
+        </ul>
+      </nav>
+      <div
+        class="w-full h-5/6 flex justify-center items-center relative overflow-hidden"
+      >
+        <div
+          class="w-5/6 h-full pb-5 flex justify-center rounded-md items-center relative overflow-hidden"
+        >
+          <ul
+            id="sec-1-carousel"
+            class="w-4/6 overflow-hidden h-full flex items-center justify-center relative"
+          >
+            <li
+              class="w-full h-full absolute top-0 bottom-0 ease-in transition-all duration-1000 opacity-0"
+            >
+              <img
+                src="../assets/sec-2-img-1.jpg"
+                alt=""
+                class="object-contain w-full h-auto"
+              />
+            </li>
+            <li
+              class="w-full h-full absolute top-0 bottom-0 ease-in transition-all duration-1000 opacity-0"
+            >
+              <img
+                src="../assets/sec-2-img-2.jpg"
+                alt=""
+                class="object-contain w-full h-auto"
+              />
+            </li>
+            <li
+              class="w-full h-full absolute top-0 bottom-0 ease-in transition-all duration-1000 opacity-0"
+            >
+              <img
+                src="../assets/sec-3-img-2.jpg"
+                alt=""
+                class="object-contain w-full h-auto"
+              />
+            </li>
+          </ul>
+          <ul
+            class="bg-zinc-800 w-2/6 h-full flex flex-col items-center justify-center"
+          >
+            <li class="italic text-xl text-orange-200 dancing tracking-widest">
+              Reserve
+            </li>
+            <ul class="w-full flex flex-row items-center justify-center gap-2">
+              <i
+                id="sec-2-dot-left"
+                class="ri-more-line text-5xl text-orange-200 opacity-0"
+              ></i>
+
+              <li
+                class="text-5xl tracking-widest uppercase text-orange-200 text-center flex flex-col items-center justify-center"
+              >
+                Book
+              </li>
+              <i
+                id="sec-2-dot-right"
+                class="ri-more-line text-5xl text-orange-200 opacity-0"
+              ></i>
+            </ul>
+            <button
+              class="uppercase border text-white border-orange-200 px-10 py-3 mt-10 w-4/5"
+            >
+              Book for Party
+            </button>
+            <button
+              class="uppercase border text-white border-orange-200 px-10 py-3 mt-10 w-4/5"
+            >
+              Book A Table
+            </button>
+            <hr class="text-orange-200 w-3/6 mt-10" />
+            <button
+              id="sec-1-view-btn"
+              class="uppercase border text-white border-orange-200 px-10 py-3 mt-10 w-4/5 hover:text-black fill-background"
+            >
+              Contact Now
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sec-2 -->
+    <div
+      class="w-full h-full bg-zinc-900 flex items-center justify-center py-40"
+    >
+      <ul
+        class="flex flex-col items-center justify-center text-white w-1/2 gap-3"
+      >
+        <li class="italic text-xl text-orange-200 dancing tracking-widest">
+          Recommendataions
+        </li>
+        <ul class="w-full flex flex-row items-center justify-center gap-5">
+          <i class="ri-more-line text-5xl text-orange-200"></i>
+
+          <li
+            class="text-5xl uppercase text-orange-200 text-center flex flex-col items-center justify-center"
+          >
+            OUR BEST
+            <span class="tracking-widest">SPECIALTIES </span>
+          </li>
+          <i class="ri-more-line text-5xl text-orange-200"></i>
+        </ul>
+
+        <li
+          class="w-4/5 text-center text-md tracking-widest font-thin mt-5 relative"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
+          veniam recusandae ullam excepturi Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Voluptatum, veniam recusandae ullam
+          excepturi
+        </li>
+        <button
+          class="uppercase border border-orange-200 px-10 py-3 mt-10 custom-image-shadow"
+        >
+          View More
+        </button>
+      </ul>
+
+      <ul
+        class="overflow-hidden flex items-center justify-center w-1/2 h-full px-10 relative"
+      >
+        <img
+          src="../assets/sec-3-img-2.jpg"
+          class="w-full h-full object-cover rounded-md shadow-xl"
+        />
+        <div
+          class="cover-img w-full h-full bg-zinc-900 absolute top-0 bottom-0"
+        ></div>
+      </ul>
+    </div>
+
+    <!-- Sec-3 -->
+    <div
+      class="w-full h-full flex items-center justify-start overflow-hidden relative"
+    >
+      <ul id="sec-3-img-loop" class="h-4/6 bg-green-400 flex -left-0 relative">
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/index-sec-6-img-1.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/index-sec-6-img-2.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/index-sec-6-img-3.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/gallery-1-img-2.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/gallery-1-img-3.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/gallery-1-img-4.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/gallery-1-img-5.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="drawer-hover h-full w-80 relative overflow-hidden">
+          <img
+            src="../assets/gallery-1-img-6.jpg"
+            alt=""
+            class="object-cover w-full h-full"
+          />
+          <div
+            id="sec-6-cover-img-1"
+            class="w-full h-full bg-transparent absolute -top-[100%] bottom-0 rounded-md flex items-center justify-center"
+          >
+            <ul
+              class="w-5/6 h-5/6 bg-white flex items-center justify-center rounded-md"
+            >
+              <li
+                class="italic text-xl text-orange-800 dancing tracking-widest"
+              >
+                Starter
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sec-4  -->
+    <div class="w-full bg-zinc-800 flex flex-col p-32 gap-10">
+      <ul class="flex flex-col w-full items-center justify-center gap-3">
+        <li class="italic text-xl text-orange-200 dancing tracking-widest">
+          Special Section
+        </li>
+        <ul class="w-full flex flex-row items-center justify-center gap-5">
+          <i class="dot-left ri-more-line text-5xl text-orange-200"></i>
+
+          <li
+            class="text-6xl uppercase text-orange-200 text-center flex flex-col items-center justify-center"
+          >
+            From Our Menu
+          </li>
+          <i class="dot-right ri-more-line text-5xl text-orange-200"></i>
+        </ul>
+      </ul>
+      <div class="w-full flex pt-10 gap-10">
+        <ul class="w-1/2">
+          <li
+            class="text-xl text-orange-200 uppercase tracking-widest w-full flex justify-between"
+          >
+            <span>ROASTED LAMB RUMP </span>
+            <span>$25</span>
+          </li>
+          <li class="text-lg text-white w-full flex justify-between">
+            Grilled lamb cutlets, pomegranate glaze, butternut squash
+          </li>
+        </ul>
+        <ul class="w-1/2">
+          <li
+            class="text-xl text-orange-200 uppercase tracking-widest w-full flex justify-between"
+          >
+            <span>ROASTED LAMB RUMP </span>
+            <span>$25</span>
+          </li>
+          <li class="text-lg text-white w-full flex justify-between">
+            Grilled lamb cutlets, pomegranate glaze, butternut squash
+          </li>
+        </ul>
+      </div>
+      <div class="w-full flex pt-10 gap-10">
+        <ul class="w-1/2">
+          <li
+            class="text-xl text-orange-200 uppercase tracking-widest w-full flex justify-between"
+          >
+            <span>ROASTED LAMB RUMP </span>
+            <span>$25</span>
+          </li>
+          <li class="text-lg text-white w-full flex justify-between">
+            Grilled lamb cutlets, pomegranate glaze, butternut squash
+          </li>
+        </ul>
+        <ul class="w-1/2">
+          <li
+            class="text-xl text-orange-200 uppercase tracking-widest w-full flex justify-between"
+          >
+            <span>ROASTED LAMB RUMP </span>
+            <span>$25</span>
+          </li>
+          <li class="text-lg text-white w-full flex justify-between">
+            Grilled lamb cutlets, pomegranate glaze, butternut squash
+          </li>
+        </ul>
+      </div>
+      <div class="w-full flex pt-10 gap-10">
+        <ul class="w-1/2">
+          <li
+            class="text-xl text-orange-200 uppercase tracking-widest w-full flex justify-between"
+          >
+            <span>ROASTED LAMB RUMP </span>
+            <span>$25</span>
+          </li>
+          <li class="text-lg text-white w-full flex justify-between">
+            Grilled lamb cutlets, pomegranate glaze, butternut squash
+          </li>
+        </ul>
+        <ul class="w-1/2">
+          <li
+            class="text-xl text-orange-200 uppercase tracking-widest w-full flex justify-between"
+          >
+            <span>ROASTED LAMB RUMP </span>
+            <span>$25</span>
+          </li>
+          <li class="text-lg text-white w-full flex justify-between">
+            Grilled lamb cutlets, pomegranate glaze, butternut squash
+          </li>
+        </ul>
+      </div>
+
+      <ul></ul>
+    </div>
+
+    <!-- Sec-5  -->
+    <div
+      style="background-image: url('../assets/abt-sec-1-img-3.jpg')"
+      class="w-full h-1/2 flex items-center justify-center relative parallax-container"
+    >
+      <i
+        class="ri-play-circle-line text-orange-200 text-9xl font-extralight"
+      ></i>
+    </div>
+
+    <!-- Sec-6  -->
+    <div class="w-full h-full bg-zinc-800 flex items-center justify-center">
+      <ul class="flex flex-col items-center justify-center text-white w-full">
+        <li class="italic text-9xl text-orange-200 prism">"</li>
+        <li
+          class="w-3/5 text-center text-md tracking-widest italic leading-loose relative -top-5"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
+          veniam recusandae ullam excepturi culpa nulla maxime debitis adipisci
+          veniam recusandae ullam excepturi
+        </li>
+        <li class="text-2xl text-orange-200 uppercase mt-5">Robert Chang</li>
+        <li class="text-lg font-thin">Gutarist</li>
+      </ul>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="../utils.js"></script>
+  <script src="../globalscript.js"></script>
+  <script src="../javascript/resturant.js"></script>
+</html>

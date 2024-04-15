@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tilt+Prism&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.prism {
+  font-family: "Tilt Prism", sans-serif;
+}
+.dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.custom-image-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-image-shadow:hover {
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes custom-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.custom-pulse {
+  animation: custom-pulse 1.5s infinite;
+}
+
+.hover-border-b {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-border-b::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px; /* Adjust the thickness of the border as needed */
+  background-color: #f59e0b; /* Adjust the border color */
+  transition: width 0.2s ease-in-out; /* Adjust the transition speed as needed */
+}
+
+.hover-border-b:hover::before {
+  width: 100%;
+}
+
+.fill-background {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  background-color: transparent; /* Set initial background color */
+  transition: background-color 0.5s ease; /* Transition the background color */
+}
+
+.fill-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fed7aa; /* Set the color to text-orange-200 */
+  transition: width 0.5s ease; /* Transition the width */
+  z-index: -1;
+}
+
+.fill-background:hover::before {
+  width: 100%;
+}
+
+.fill-background:hover {
+  background-color: transparent; /* Reset background color on hover */
+}
+
+.parallax-container {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This creates the parallax effect */
+  /* overflow-y: scroll; Enable vertical scrolling */
+}
+
+.content {
+  /* Styles for your content */
+  padding: 20px;
+  /* Add more content if needed to create the scrolling effect */
+}
