@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="global.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/global.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -15,14 +14,21 @@
     <div
       id="sec-1"
       class="w-full h-full bg-cover bg-center bg-no-repeat relative parallax-container"
-      style="background-image: url('assets/bg-sec1.jpg')"
+      style="background-image: url('assets/bar_front.jpg')"
     >
       <div
         class="absolute inset-0 bg-black bg-opacity-5 backdrop-blur-sm"
       ></div>
       <nav class="w-full h-1/6 flex items-center justify-between relative">
         <ul class="flex items-center h-full px-10">
-          <li><i class="ri-bluesky-line text-white text-3xl"></i></li>
+          <li>
+            <img
+              src="assets/logo white.png"
+              alt=""
+              srcset=""
+              class="smallLogo"
+            />
+          </li>
         </ul>
         <ul class="flex items-center h-full px-10 gap-6 uppercase text-white">
           <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
@@ -53,24 +59,24 @@
             class="sec-1-intro flex flex-col items-center justify-center text-white gap-5"
           >
             <li id="sec-1-welcome" class="italic text-2xl text-orange-200">
-              Welcome to out delicious corner
+              Where Every Sip Tells a Story
             </li>
             <li
               id="sec-1-best"
               class="text-8xl uppercase prism text-orange-200"
             >
-              The Best Dishes
+              HOOPLA BAR
             </li>
             <li id="sec-1-proper" class="w-2/3 text-center text-xl">
-              We have proper passion for cooking. Love is the secert ingredinet
-              that makes our all meals best in the world.
+              We pour our passion into every drink. Love is the secret
+              ingredient that makes our cocktails the best in town.
             </li>
             <li>
               <button
                 id="sec-1-view-btn"
                 class="uppercase border border-orange-200 px-10 py-3 mt-10 hover:text-black fill-background"
               >
-                View More
+                Contact Us
               </button>
             </li>
           </ul>
@@ -105,25 +111,38 @@
       </ul>
 
       <ul class="flex items-center justify-around w-5/6 m-20">
-        <li class="overflow-hidden w-72 relative custom-image-shadow">
-          <img
-            src="assets/sec-2-img-1.jpg"
-            alt=""
-            class="object-contain w-full h-auto rounded-md"
-          />
+        <li
+          class="overflow-hidden w-72 h-96 rounded-xl relative custom-image-shadow"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            class="object-cover object-center filter brightness-150"
+          >
+            <source
+              src="assets/videos/drop_drink_edited.mp4"
+              type="video/mp4"
+            />
+          </video>
           <div
             class="w-full h-full bg-zinc-900 absolute top-0 bottom-0 cover-img"
           ></div>
         </li>
         <li>
-          <i class="ri-bluesky-line text-9xl text-orange-200 animate-pulse"></i>
-        </li>
-        <li class="overflow-hidden w-72 relative custom-image-shadow">
           <img
-            src="assets/sec-2-img-2.jpg"
+            src="assets/logo.jpg"
             alt=""
-            class="object-contain w-full h-auto rounded-md"
+            srcset=""
+            class="midLogo custom-pulse"
           />
+        </li>
+        <li
+          class="overflow-hidden w-72 h-96 rounded-xl relative custom-image-shadow"
+        >
+          <video autoplay loop muted class="object-cover object-center">
+            <source src="assets/videos/mango_edited.mp4" type="video/mp4" />
+          </video>
           <div
             class="w-full h-full bg-zinc-900 absolute top-0 bottom-0 cover-img"
           ></div>
@@ -145,7 +164,14 @@
         <li class="text-lg font-thin">Gutarist</li>
       </ul>
       <ul class="flex items-center justify-center w-1/2 h-full">
-        <img src="assets/sec-3-img-1.jpg" class="w-full h-full object-cover" />
+        <video
+          autoplay
+          loop
+          muted
+          class="w-full h-full object-cover object-center"
+        >
+          <source src="assets/videos/GIRLS ENTRY.mp4" type="video/mp4" />
+        </video>
       </ul>
     </div>
 
@@ -156,7 +182,7 @@
         class="overflow-hidden flex items-center justify-center w-1/2 h-full px-10 relative"
       >
         <img
-          src="assets/sec-3-img-2.jpg"
+          src="assets/1 (8).JPG"
           class="w-full h-full object-cover rounded-md shadow-xl"
         />
         <div
@@ -296,9 +322,9 @@
       <ul class="flex items-center justify-around w-1/2">
         <li class="w-72 overflow-hidden relative">
           <img
-            src="assets/sec-2-img-1.jpg"
+            src="assets/1 (9).JPG"
             alt=""
-            class="custom-image-shadow object-contain w-full h-auto rounded-md"
+            class="custom-image-shadow object-contain w-full h-auto rounded-md filter brightness-150"
           />
           <div
             class="cover-img w-full h-full bg-zinc-900 absolute top-0 bottom-0"
@@ -306,9 +332,9 @@
         </li>
         <li class="w-72 overflow-hidden relative">
           <img
-            src="assets/sec-2-img-2.jpg"
+            src="assets/1 (10).JPG"
             alt=""
-            class="custom-image-shadow object-contain w-full h-auto rounded-md"
+            class="custom-image-shadow object-contain w-full h-auto rounded-md filter brightness-150"
           />
           <div
             class="cover-img w-full h-full bg-zinc-900 absolute top-0 bottom-0"
@@ -386,9 +412,9 @@
             class="overflow-hidden w-72 h-full relative custom-image-shadow rounded-md"
           >
             <img
-              src="assets/index-sec-6-img-1.jpg"
+              src="assets/1 (11).JPG"
               alt=""
-              class="object-cover w-full h-full rounded-md"
+              class="object-cover w-full h-full rounded-md filter brightness-150"
             />
             <div
               id="sec-6-cover-img-1"
@@ -420,9 +446,9 @@
             class="overflow-hidden w-72 h-full relative custom-image-shadow rounded-md"
           >
             <img
-              src="assets/index-sec-6-img-2.jpg"
+              src="assets/1 (9).JPG"
               alt=""
-              class="object-cover w-full h-full rounded-md"
+              class="object-cover w-full h-full rounded-md filter brightness-150"
             />
             <div
               id="sec-6-cover-img-1"
@@ -454,9 +480,9 @@
             class="overflow-hidden w-72 h-full relative custom-image-shadow rounded-md"
           >
             <img
-              src="assets/index-sec-6-img-3.jpg"
+              src="assets/1 (10).JPG"
               alt=""
-              class="object-cover w-full h-full rounded-md"
+              class="object-cover w-full h-full rounded-md filter brightness-150"
             />
             <div
               id="sec-6-cover-img-1"

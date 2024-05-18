@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tilt+Prism&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   padding: 0;
   margin: 0;
@@ -104,4 +107,11 @@ body {
   /* Styles for your content */
   padding: 20px;
   /* Add more content if needed to create the scrolling effect */
+}
+.smallLogo {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+.midLogo {
+  height: 8vw;
 }
