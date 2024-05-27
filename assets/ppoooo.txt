@@ -1,0 +1,24 @@
+class Solution {
+    public int[] occurrencesOfElement(int[] array, int[] positions, int target) {
+        List<Integer> indices = new ArrayList<>();
+        
+        // Find all indices where the target element appears in the array
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                indices.add(i);
+            }
+        }
+
+        // Update the positions array based on the found indices
+        for (int i = 0; i < positions.length; i++) {
+            int position = positions[i] - 1;
+            if (position >= indices.size()) {
+                positions[i] = -1; // If the position is out of bounds, set to -1
+            } else {
+                positions[i] = indices.get(position);
+            }
+        }
+
+        return positions;
+    }
+}

@@ -1,0 +1,35 @@
+#include <vector>
+#include <unordered_map>
+#include <unordered_set>
+
+class Solution {
+public:
+    std::vector<int> queryResults(int limit, std::vector<std::vector<int>>& queries) {
+        std::unordered_map<int, int> ballToColorMap;
+        std::vector<int> results(queries.size());
+        std::unordered_set<int> distinctColors;
+
+        for (int i = 0; i < queries.size(); i++) {
+            int ballIndex = queries[i][0];
+            int newColor = queries[i][1];
+
+            if (ballToColorMap.find(ballIndex) != ballToColorMap.end()) {
+                int oldColor = ballToColorMap[ballIndex];
+                bool colorInUse = false;
+                for (const auto& entry : ballToColorMap) {
+                    if (entry.first != ballIndex && entry.second == oldColor) {
+                        colorInUse = true;
+                        break;
+                    }
+                }
+                if (!colorInUse) distinctColors.erase(oldColor);
+            }
+
+            ballToColorMap[ballIndex] = newColor;
+            distinctColors.insert(newColor);
+            results[i] = distinctColors.size();
+        }
+
+        return results;
+    }
+};

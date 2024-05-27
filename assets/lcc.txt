@@ -1,0 +1,34 @@
+import java.util.HashMap;
+
+class Solution {
+    public long numberOfPairs(int[] nums1, int[] nums2, int k) {
+        HashMap<Integer, Integer> divisorCountMap = new HashMap<>();
+        for (int i = 0; i < nums2.length; i++) {
+            long scaledValue = (long) nums2[i] * k; // Cast to long to prevent overflow
+            if (scaledValue > Integer.MAX_VALUE || scaledValue < Integer.MIN_VALUE) {
+                // Skip values that overflow the integer bounds
+                continue;
+            }
+            int scaledIntValue = (int) scaledValue;
+            divisorCountMap.put(scaledIntValue, divisorCountMap.getOrDefault(scaledIntValue, 0) + 1);
+        }
+        
+        long pairCount = 0;
+        for (int num : nums1) {
+            for (int divisor = 1; divisor <= Math.sqrt(num); divisor++) {
+                if (num % divisor == 0) {
+                    if (divisorCountMap.containsKey(divisor)) {
+                        int count = divisorCountMap.get(divisor);
+                        pairCount += count;
+                    }
+                    int correspondingDivisor = num / divisor;
+                    if (divisor != correspondingDivisor && divisorCountMap.containsKey(correspondingDivisor)) {
+                        int count = divisorCountMap.get(correspondingDivisor);
+                        pairCount += count;
+                    }
+                }
+            }
+        }
+        return pairCount;
+    }
+}
