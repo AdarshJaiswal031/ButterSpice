@@ -29,21 +29,21 @@ const tl = gsap.timeline({ repeat: -1 });
 let isIncrease = true
 
 
-setInterval(function () {
-  if (loopIndex == 0) {
-    isIncrease = true
-  }
-  if (loopIndex >= (imgLength - 4)) {
-    isIncrease = false;
-  }
-  if (isIncrease) {
-    an.shiftImg(imgLoop, loopIndex++, 20, imgLength);
-  }
-  else {
-    an.shiftImg(imgLoop, loopIndex--, 20, imgLength);
+// setInterval(function () {
+//   if (loopIndex == 0) {
+//     isIncrease = true
+//   }
+//   if (loopIndex >= (imgLength - 4)) {
+//     isIncrease = false;
+//   }
+//   if (isIncrease) {
+//     an.shiftImg(imgLoop, loopIndex++, 20, imgLength);
+//   }
+//   else {
+//     an.shiftImg(imgLoop, loopIndex--, 20, imgLength);
 
-  }
-}, 3000);
+//   }
+// }, 3000);
 
 
 // const imgLoopChildern = imgLoop.children

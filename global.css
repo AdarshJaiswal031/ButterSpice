@@ -115,3 +115,19 @@ body {
 .midLogo {
   height: 8vw;
 }
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#sec-3-img-loop {
+  animation: 20s slide infinite linear;
+
+}
+.sec-3-img-loop {
+  animation: 10s slide infinite linear;
+
+}
