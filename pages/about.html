@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="../mainTailwind.css">
   </head>
   <body class="bg-black relative">
-    <div
+    <header
     id="sec-1"
     class="w-full h-full bg-cover bg-center bg-no-repeat relative parallax-container"
     style="background-image: url('../assets/1\ \(2\).JPG')"
   >
-  <nav class="w-full h-1/6 flex items-center px-10 justify-between relative">
-    <ul class="flex items-center h-full  gap-5">
-      <li>
+  <nav class="w-full h-1/6 flex items-center justify-end lg:justify-between md:justify-center px-10 relative">
+    <ul class="hidden lg:flex items-center h-full gap-5">
+      <li >
         <a
           target="_blank"
           href="https://www.facebook.com/profile.php?id=61556130204946&mibextid=LQQJ4d"
@@ -43,27 +43,42 @@
         </a>
       </li>
     </ul>
-    <ul class="flex items-center h-full px-10 gap-6 uppercase text-white relative">
+    <ul class="hidden md:flex lg:flex items-center h-full px-10 gap-6 uppercase text-white">
       <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
         <a href="../index.html">Home</a>
       </li>
       <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-        <a href="about.html">About</a>
+        <a href="./about.html">About</a>
       </li>
       <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-        <a href="contact.html">Contact</a>
+        <a href="./contact.html">Contact</a>
       </li>
       <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-        <a href="Restaurant.html">Restaurant</a>
+        <a href="./Restaurant.html">Restaurant</a>
       </li>
       <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-        <a href="gallery.html">Gallery</a>
+        <a href="./gallery.html">Gallery</a>
       </li>
     </ul>
-    <ul class="flex items-center h-full px-10 relative">
-      <li><i class="ri-menu-4-line text-white text-3xl"></i></li>
+    <ul class="flex items-center h-full cursor-pointer lg:px-10 ">
+      <li class="lg:hidden md:hidden" >
+          <img src="../assets/menu-4-line.png" id="menuButton"/>
+      </li>
     </ul>
   </nav>
+  <div id="sidebar" class="fixed top-0 right-0 w-64 h-full bg-orange-200 text-black transform translate-x-full transition-transform duration-300 z-40 hidden shadow-lg rounded-l-lg">
+    <div class="p-5 flex justify-between items-center border-b border-gray-300">
+      <span class="text-xl font-semibold">Menu</span>
+      <button id="closeButton" class="text-2xl">&times;</button>
+    </div>
+    <ul class="p-5">
+      <li class="py-2"><a href="../index.html" class="block sidebar-button p-2 rounded-md">Home</a></li>
+      <li class="py-2"><a href="./about.html" class="block sidebar-button p-2 rounded-md">About</a></li>
+      <li class="py-2"><a href="./contact.html" class="block sidebar-button p-2 rounded-md">Contact</a></li>
+      <li class="py-2"><a href="./Restaurant.html" class="block sidebar-button p-2 rounded-md">Restaurant</a></li>
+      <li class="py-2"><a href="./gallery.html" class="block sidebar-button p-2 rounded-md">Gallery</a></li>
+    </ul>
+  </div>
     <div class="w-full h-4/6  flex justify-center items-center relative">
         <ul class="flex flex-col items-center justify-center text-white gap-5 relative">
           <ul
@@ -79,12 +94,12 @@
           </ul>
         </ul>
       </div>
-      </div>
+    </header>
 
       <div
-      class="w-full h-full bg-zinc-800 flex items-center justify-between py-40"
+      class="w-full md:h-full bg-zinc-800 flex flex-col gap-20 md:flex-row items-center justify-between py-20 md:py-40"
     >
-    <ul class="flex items-center justify-center w-1/2 ">
+    <ul class="flex items-center justify-center w-5/6 md:w-1/2 h-1/3 lg:h-full md:h-full mx-10">
       <video
         autoplay
         loop
@@ -95,7 +110,7 @@
       </video>
     </ul>
       <ul
-        class=" w-1/2 h-full flex flex-col items-center justify-center text-white gap-3"
+        class=" w-full lg:w-1/2 md:w-1/2 h-1/2 lg:h-full md:h-full flex flex-col items-center justify-center text-white gap-3"
       >
         <li class="italic text-xl text-orange-200 dancing tracking-widest">
           Recommendataions
@@ -103,7 +118,7 @@
         <ul class="w-full flex flex-row items-center justify-center gap-5">
           <img
           src="../assets/more-line.png"
-            class="dot-left opacity-0"
+            class="dot-left opacity-0 hidden lg:flex md:flex"
           ></img>
 
           <li
@@ -113,7 +128,7 @@
           </li>
           <img
           src="../assets/more-line.png"
-            class="dot-right opacity-0"
+            class="dot-right opacity-0 hidden lg:flex md:flex"
           ></img>
         </ul>
 
@@ -137,11 +152,11 @@
   />
     </div>
 
-    <div class="w-full h-full bg-zinc-800 flex items-center justify-center">
+    <div class="w-full md:h-full bg-zinc-800 flex items-center justify-center py-20 md:py-0 ">
         <ul class="flex flex-col items-center justify-center text-white w-full">
           <li class="italic text-9xl text-orange-200 prism">"</li>
           <li
-            class="w-3/5 text-center text-md tracking-widest italic leading-loose relative -top-5"
+            class="w-4/5 text-center text-md tracking-widest italic leading-loose relative -top-5"
           >
           Are you looking for a place where fun meets sophistication? the ultimate destination for the vibrant youth of today. Nestled in the heart of the city, our bar offers a unique blend of electrifying music, delicious cocktails, and a chic ambiance that guarantees a memorable night out. We pride ourselves on creating an inclusive and exciting atmosphere where you can unwind, dance, and socialise with friends. Whether you're celebrating a special occasion or just looking for a great time, our friendly staff and top-notch service ensure that every visit is an unforgettable experience. 
           </li>
@@ -189,7 +204,7 @@
                 <p>
                   <img src="../assets/mail-line.png" />
                 </p>
-                <a class="text-gray-400">hooplaclubandbar@gmail.com </a>
+                 <a class="text-gray-400 text-sm">hooplaclubandbar@gmail.com </a>
               </li>
             </nav>
           </div>

@@ -19,14 +19,14 @@
   </head>
 
   <body class="bg-zinc-900 relative">
-    <div
+    <header
       id="sec-1"
       class="w-full h-full relative parallax-container flex flex-col items-center justify-center"
     >
       <nav
-        class="w-full h-1/6 flex items-center px-10 justify-between relative"
+        class="w-full h-1/6 flex items-center justify-end lg:justify-between md:justify-center px-10 relative"
       >
-        <ul class="flex items-center h-full gap-5">
+        <ul class="hidden lg:flex items-center h-full gap-5">
           <li>
             <a
               target="_blank"
@@ -53,32 +53,76 @@
           </li>
         </ul>
         <ul
-          class="flex items-center h-full px-10 gap-6 uppercase text-white relative"
+          class="hidden md:flex lg:flex items-center h-full px-10 gap-6 uppercase text-white"
         >
           <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
             <a href="../index.html">Home</a>
           </li>
           <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-            <a href="about.html">About</a>
+            <a href="./about.html">About</a>
           </li>
           <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-            <a href="contact.html">Contact</a>
+            <a href="./contact.html">Contact</a>
           </li>
           <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-            <a href="Restaurant.html">Restaurant</a>
+            <a href="./Restaurant.html">Restaurant</a>
           </li>
           <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-            <a href="gallery.html">Gallery</a>
+            <a href="./gallery.html">Gallery</a>
           </li>
         </ul>
-        <ul class="flex items-center h-full px-10 relative">
-          <li><i class="ri-menu-4-line text-white text-3xl"></i></li>
+        <ul class="flex items-center h-full cursor-pointer lg:px-10">
+          <li class="lg:hidden md:hidden">
+            <img src="../assets/menu-4-line.png" id="menuButton" />
+          </li>
         </ul>
       </nav>
+      <div
+        id="sidebar"
+        class="fixed top-0 right-0 w-64 h-full bg-orange-200 text-black transform translate-x-full transition-transform duration-300 z-40 hidden shadow-lg rounded-l-lg"
+      >
+        <div
+          class="p-5 flex justify-between items-center border-b border-gray-300"
+        >
+          <span class="text-xl font-semibold">Menu</span>
+          <button id="closeButton" class="text-2xl">&times;</button>
+        </div>
+        <ul class="p-5">
+          <li class="py-2">
+            <a href="../index.html" class="block sidebar-button p-2 rounded-md"
+              >Home</a
+            >
+          </li>
+          <li class="py-2">
+            <a href="./about.html" class="block sidebar-button p-2 rounded-md"
+              >About</a
+            >
+          </li>
+          <li class="py-2">
+            <a href="./contact.html" class="block sidebar-button p-2 rounded-md"
+              >Contact</a
+            >
+          </li>
+          <li class="py-2">
+            <a
+              href="./Restaurant.html"
+              class="block sidebar-button p-2 rounded-md"
+              >Restaurant</a
+            >
+          </li>
+          <li class="py-2">
+            <a href="./gallery.html" class="block sidebar-button p-2 rounded-md"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </div>
       <ul
         class="border-2 border-orange-200 mb-10 w-5/6 h-5/6 flex items-center justify-center"
       >
-        <ul class="w-1/2 h-full flex flex-col items-center justify-center">
+        <ul
+          class="w-full md:w-1/2 h-full flex flex-col items-center justify-center md:p-10"
+        >
           <li class="italic text-xl text-orange-200">Write to us</li>
           <ul class="w-full flex flex-row items-center justify-center gap-5">
             <i
@@ -96,20 +140,20 @@
               class="ri-more-line text-5xl text-orange-200 opacity-0"
             ></i>
           </ul>
-          <ul class="flex flex-col gap-5 mt-10">
+          <ul class="w-full flex flex-col gap-5 mt-10 items-center">
             <button
-              class="w-full border text-white border-orange-200 px-10 py-3 hover-border-b"
+              class="md:w-full w-5/6 text-center border text-white border-orange-200 text-md md:px-10 py-3 hover-border-b"
             >
               hooplaclubandbar@gmail.com
             </button>
             <button
-              class="w-full border text-white border-orange-200 px-10 py-3 hover-border-b"
+              class="md:w-full w-5/6 text-center border text-white border-orange-200 text-md md:px-10 py-3 hover-border-b"
             >
               Phone no: +91 73000 11709
             </button>
           </ul>
         </ul>
-        <ul class="w-1/2 h-full">
+        <ul class="w-1/2 h-full hidden md:flex">
           <img
             src="../assets/contact-1-img-1.jpg"
             alt=""
@@ -117,7 +161,7 @@
           />
         </ul>
       </ul>
-    </div>
+    </header>
     <!-- Sec-1 -->
     <div
       id="sec-1"
@@ -183,7 +227,7 @@
                 <p>
                   <img src="../assets/mail-line.png" />
                 </p>
-                <a class="text-gray-400">hooplaclubandbar@gmail.com </a>
+                <a class="text-gray-400 text-sm">hooplaclubandbar@gmail.com </a>
               </li>
             </nav>
           </div>
@@ -274,5 +318,6 @@
     referrerpolicy="no-referrer"
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="../utils.js"></script>
   <script src="../globalscript.js"></script>
 </html>

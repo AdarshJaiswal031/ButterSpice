@@ -13,54 +13,69 @@
     id="sec-1"
     class="w-full h-full bg-cover bg-center bg-no-repeat relative parallax-container"
     style="background-image: url('../assets/gallery-1-img-1.jpg')">
-    <nav class="w-full h-1/6 flex items-center px-10 justify-between relative">
-    <ul class="flex items-center h-full gap-5">
-      <li>
-        <a
-          target="_blank"
-          href="https://www.facebook.com/profile.php?id=61556130204946&mibextid=LQQJ4d"
-        >
-          <img src="../assets/facebook-fill.png" />
-        </a>
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/hooplaclub?igsh=cHVuaWhucHRxZjVk"
-        >
-          <img src="../assets/instagram-line.png" />
-        </a>
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://youtube.com/@hooplaclub?si=SbkKoPyUE9kM4YDy"
-        >
-          <img src="../assets/youtube-fill.png" />
-        </a>
-      </li>
-    </ul>
-      <ul class="flex items-center h-full px-10 gap-6 uppercase text-white relative">
+    <nav class="w-full h-1/6 flex items-center justify-end lg:justify-between md:justify-center px-10 relative">
+      <ul class="hidden lg:flex items-center h-full gap-5">
+        <li >
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=61556130204946&mibextid=LQQJ4d"
+          >
+            <img src="../assets/facebook-fill.png" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/hooplaclub?igsh=cHVuaWhucHRxZjVk"
+          >
+            <img src="../assets/instagram-line.png" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://youtube.com/@hooplaclub?si=SbkKoPyUE9kM4YDy"
+          >
+            <img src="../assets/youtube-fill.png" />
+          </a>
+        </li>
+      </ul>
+      <ul class="hidden md:flex lg:flex items-center h-full px-10 gap-6 uppercase text-white">
         <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
           <a href="../index.html">Home</a>
         </li>
         <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-          <a href="about.html">About</a>
+          <a href="./about.html">About</a>
         </li>
         <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-          <a href="contact.html">Contact</a>
+          <a href="./contact.html">Contact</a>
         </li>
         <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-          <a href="Restaurant.html">Restaurant</a>
+          <a href="./Restaurant.html">Restaurant</a>
         </li>
         <li class="flex flex-col gap-1 hover-border-b pb-1 cursor-pointer">
-          <a href="gallery.html">Gallery</a>
+          <a href="./gallery.html">Gallery</a>
         </li>
       </ul>
-      <ul class="flex items-center h-full px-10 relative">
-        <li><i class="ri-menu-4-line text-white text-3xl"></i></li>
+      <ul class="flex items-center h-full cursor-pointer lg:px-10 ">
+        <li class="lg:hidden md:hidden" >
+            <img src="../assets/menu-4-line.png" id="menuButton"/>
+        </li>
       </ul>
     </nav>
+    <div id="sidebar" class="fixed top-0 right-0 w-64 h-full bg-orange-200 text-black transform translate-x-full transition-transform duration-300 z-40 hidden shadow-lg rounded-l-lg">
+      <div class="p-5 flex justify-between items-center border-b border-gray-300">
+        <span class="text-xl font-semibold">Menu</span>
+        <button id="closeButton" class="text-2xl">&times;</button>
+      </div>
+      <ul class="p-5">
+        <li class="py-2"><a href="../index.html" class="block sidebar-button p-2 rounded-md">Home</a></li>
+        <li class="py-2"><a href="./about.html" class="block sidebar-button p-2 rounded-md">About</a></li>
+        <li class="py-2"><a href="./contact.html" class="block sidebar-button p-2 rounded-md">Contact</a></li>
+        <li class="py-2"><a href="./Restaurant.html" class="block sidebar-button p-2 rounded-md">Restaurant</a></li>
+        <li class="py-2"><a href="./gallery.html" class="block sidebar-button p-2 rounded-md">Gallery</a></li>
+      </ul>
+    </div>
     <div class="w-full h-4/6  flex justify-center items-center relative">
         <ul class="flex flex-col items-center justify-center text-white gap-5 relative">
           <ul
@@ -77,13 +92,13 @@
       </div>
     </header>
 
-      <div
+      <header
       class="w-full  bg-zinc-900 flex items-center justify-center py-40 gap-10"
     >
     <ul class="w-full flex flex-col items-center justify-start gap-10">
 
 
-        <ul class="flex items-center justify-around w-5/6 h-96">
+        <ul class="hidden md:flex items-center justify-around w-5/6 h-96">
           <li class="drawer-hover overflow-hidden w-72 h-full relative ">
             <img
               src="../assets/1 (1).JPG"
@@ -114,13 +129,13 @@
 
         </ul>
 
-        <ul class="flex items-center justify-around w-5/6 h-96">
-          <li class="drawer-hover overflow-hidden w-72 h-full relative ">
+        <ul class="flex flex-col md:flex-row items-center justify-around w-5/6 md:h-96">
+          <li class="rounded-md md:rounded-none drawer-hover overflow-hidden w-72 h-full relative ">
             <video
             autoplay
             loop
             muted
-            class="object-cover object-center relative -top-14 filter brightness-150"
+            class="rounded-md md:rounded-none object-cover object-center relative -top-14 filter brightness-150"
             >
             <source
               src="../assets/videos/TIP TIP HOOPLA.mp4"
@@ -129,7 +144,7 @@
           </video>
 
           </li>
-          <li class="drawer-hover overflow-hidden w-72 h-full relative flex items-center justify-center ">
+          <li class="drawer-hover overflow-hidden w-72 h-full relative hidden md:flex items-center justify-center ">
             <img
             src="../assets/logo.jpg"
             alt=""
@@ -138,12 +153,12 @@
           />
 
           </li>
-          <li class="drawer-hover overflow-hidden w-72 h-full relative ">
+          <li class="rounded-md md:rounded-none drawer-hover overflow-hidden w-72 h-full relative ">
             <video
             autoplay
             loop
             muted
-            class="object-cover object-center relative -top-14 filter brightness-150"
+            class="rounded-md md:rounded-none object-cover object-center relative -top-14 filter brightness-150"
           >
             <source
               src="../assets/videos/its for you.mp4"
@@ -162,7 +177,7 @@
                 src="../assets/1 (3).JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -170,7 +185,7 @@
                 src="../assets/1 (10).JPG"
                 alt=""
                 class="object-cover w-full h-full filter brightness-150"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -178,7 +193,7 @@
                 src="../assets/1 (9)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full filter brightness-150"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -186,7 +201,7 @@
                 src="../assets/bar_front.jpg"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -194,7 +209,7 @@
                 src="../assets/1 (12)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full filter brightness-150"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -202,7 +217,7 @@
                 src="../assets/1 (4).JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -210,7 +225,7 @@
                 src="../assets/1 (11)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -218,7 +233,7 @@
                 src="../assets/1 (13)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -226,7 +241,7 @@
                 src="../assets/1 (33)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -242,7 +257,7 @@
                 src="../assets/1 (3).JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -250,7 +265,7 @@
                 src="../assets/1 (10).JPG"
                 alt=""
                 class="object-cover w-full h-full filter brightness-150"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -258,7 +273,7 @@
                 src="../assets/1 (9)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full filter brightness-150"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -266,7 +281,7 @@
                 src="../assets/bar_front.jpg"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -274,7 +289,7 @@
                 src="../assets/1 (12)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full filter brightness-150"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -282,7 +297,7 @@
                 src="../assets/1 (4).JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -290,7 +305,7 @@
                 src="../assets/1 (11)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -298,7 +313,7 @@
                 src="../assets/1 (13)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -306,7 +321,7 @@
                 src="../assets/1 (33)-min.JPG"
                 alt=""
                 class="object-cover w-full h-full"
-                loading="lazy"
+                id="change"
               />
             </li>
             <li class="drawer-hover h-full w-80 relative overflow-hidden rounded-md">
@@ -319,10 +334,8 @@
           
 
         </div>
-        
-
       </ul>
-    </div>
+    </header>
 
     <footer
     class="text-zinc-800 bg-zinc-800 body-font flex flex-col justify-center"
@@ -364,7 +377,7 @@
               <p>
                 <img src="../assets/mail-line.png" />
               </p>
-              <a class="text-gray-400">hooplaclubandbar@gmail.com </a>
+               <a class="text-gray-400 text-sm">hooplaclubandbar@gmail.com </a>
             </li>
           </nav>
         </div>

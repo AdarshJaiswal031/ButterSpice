@@ -90,6 +90,23 @@ Array.from(drawerHover).forEach((item) => {
     an.drawer(item, element)
 })
 
+document.getElementById('menuButton').addEventListener('click', function () {
+    const sidebar = document.getElementById('sidebar');
+    console.log("clicked")
+    sidebar.classList.remove('hidden');
+    setTimeout(() => {
+        sidebar.classList.remove('translate-x-full');
+    }, 10);
+});
+
+document.getElementById('closeButton').addEventListener('click', function () {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.add('translate-x-full');
+    setTimeout(() => {
+        sidebar.classList.add('hidden');
+    }, 300); // Duration should match the CSS transition duration
+});
+
 
 
 
